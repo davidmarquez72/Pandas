@@ -1,0 +1,21 @@
+To view the full details of each script, navigate to the corresponding branch. Each branch contains a detailed description and explanation of its functionality. Here are the branches, showcasing the complete scripts I’ve developed:
+
+clinicaOdonto.py, 
+CopyPastePlantilla.py, 
+CruceCentrosMedicos.py, 
+cruceCodigo.py, 
+CrucePlanoEps.py, 
+CruceReporte.py, 
+dashboard.py, 
+divyvencer.py, 
+duplicados.py, 
+filtro123H.py, 
+macros.py, 
+macros2.py, 
+pendites_ach_juntas.py, 
+quitar57.py, 
+SepararNumeroID.py, 
+template.py, 
+tildesComillas.py, 
+traerDato.py, 
+Union.py
