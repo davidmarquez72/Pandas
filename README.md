@@ -19,3 +19,5 @@ template.py,
 tildesComillas.py, 
 traerDato.py, 
 Union.py
+
+If you'd like to see a summary in an Excel file, you'll find **portafolio.xlsx** here. It provides a detailed overview of my Python projects using pandas, available in both English and Spanish, as well as the automation projects I've developed.
