@@ -1,23 +1,10 @@
-To view the full details of each script, navigate to the corresponding branch. Each branch contains a detailed description and explanation of its functionality, also you can see my file .py where i apply good pracices, comments, errors handles and use of POO. Here are the branches, showcasing the complete scripts I’ve developed:
+funtion cruceCodigo()
 
-clinicaOdonto.py, 
-CopyPastePlantilla.py, 
-CruceCentrosMedicos.py, 
-cruceCodigo.py, 
-CrucePlanoEps.py, 
-CruceReporte.py, 
-dashboard.py, 
-divyvencer.py, 
-duplicados.py, 
-filtro123H.py, 
-macros.py, 
-macros2.py, 
-pendites_ach_juntas.py, 
-quitar57.py, 
-SepararNumeroID.py, 
-template.py, 
-tildesComillas.py, 
-traerDato.py, 
-Union.py
+"Using the datetime library, I get the current date in the format ""yyyy-mm-dd"" and the next day's date. 
+Through the bookstore, the dynamic route for Face-to-Face Medical Appointments is generated.
+The file ""Face-to-Face Medical Appointments"" and the file ""Codes.xslx"" are read using the pandas library. Then, the merge function is used to perform a data cross-reference where the codes that are the same are identified in the 'Resource Code' column. If matching records are found, they are saved in an Excel file.
+Subsequently, the isin() function is used to verify that the ""In-Person Medical Appointments"" codes are present in ""Codes"". Using the '~' operator, the selection is reversed to identify all codes that are not present. Then, the ""Face-to-Face Medical Appointments"" file is overwritten, thus eliminating codes that should not be used.
+The function returns a value of 2 if executed successfully. Otherwise, it returns the error line along with the corresponding error message."	
 
-If you'd like to see a summary in an Excel file, you'll find **portafolio.xlsx** here. It provides a detailed overview of my Python projects using pandas, available in both English and Spanish, as well as the automation projects I've developed.
+librarys: sys, pandas, datetime, os
+
