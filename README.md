@@ -1,23 +1,17 @@
-To view the full details of each script, navigate to the corresponding branch. Each branch contains a detailed description and explanation of its functionality, also you can see my file .py where i apply good pracices, comments, errors handles and use of POO. Here are the branches, showcasing the complete scripts I’ve developed:
+funtion divyvencer()	
 
-clinicaOdonto.py, 
-CopyPastePlantilla.py, 
-CruceCentrosMedicos.py, 
-cruceCodigo.py, 
-CrucePlanoEps.py, 
-CruceReporte.py, 
-dashboard.py, 
-divyvencer.py, 
-duplicados.py, 
-filtro123H.py, 
-macros.py, 
-macros2.py, 
-pendites_ach_juntas.py, 
-quitar57.py, 
-SepararNumeroID.py, 
-template.py, 
-tildesComillas.py, 
-traerDato.py, 
-Union.py
+"Using the datetime library, I get the current date in the format ""yyyy-mm-dd"".
+Using the os library, the path for the ""Archivo_Plano_EPS.txt"" file is dynamically generated. The maximum allowed size in bytes (1GB) is stored in a variable. Using the os.path.getsize function, the file size ""Archivo_Plano_EPS.txt"" is obtained. It is validated if the file size exceeds the set limit.
+If the file size exceeds the limit, proceed as follows:
+The original file opens in read mode with Latin-1 encoding.
+It iterates over each line of the file.
+If it's the first line, it's saved as the header.
+The current line is added to the current segment and validated if the segment size exceeds the maximum allowed size.
+If the size of the segment exceeds the limit, the segment is saved to a new file.
+The header and data are written to the split file.
+The current segment and size is reset, and this process is repeated until all the necessary files are created.
+Finally, if there is any data remaining in the last segment, it is saved in an additional file.
+Finally, the function returns a value of 2 if executed successfully. Otherwise, it returns the error line along with an explanatory message of the error."	
 
-If you'd like to see a summary in an Excel file, you'll find **portafolio.xlsx** here. It provides a detailed overview of my Python projects using pandas, available in both English and Spanish, as well as the automation projects I've developed.
+libraries: sys, datetime, os
+
