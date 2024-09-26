@@ -1,23 +1,9 @@
-To view the full details of each script, navigate to the corresponding branch. Each branch contains a detailed description and explanation of its functionality, also you can see my file .py where i apply good pracices, comments, errors handles and use of POO. Here are the branches, showcasing the complete scripts I’ve developed:
+funtion Quitar57()	
 
-clinicaOdonto.py, 
-CopyPastePlantilla.py, 
-CruceCentrosMedicos.py, 
-cruceCodigo.py, 
-CrucePlanoEps.py, 
-CruceReporte.py, 
-dashboard.py, 
-divyvencer.py, 
-duplicados.py, 
-filtro123H.py, 
-macros.py, 
-macros2.py, 
-pendites_ach_juntas.py, 
-quitar57.py, 
-SepararNumeroID.py, 
-template.py, 
-tildesComillas.py, 
-traerDato.py, 
-Union.py
+"A dynamic path is constructed for the archiving of face-to-face medical appointments using the current date. The path is created using the os.path.join function to ensure portability between different operating systems.
+The Excel file of face-to-face medical appointments is loaded into a Pandas DataFrame using the pd.read_excel function.
+A function called eliminar_57 is defined, which receives a number as input. This function converts the number into a string and checks if the first two digits are '57'. If so, remove these two digits and return the number as an integer. If the number does not start with '57', it is returned unchanged.
+The eliminar_57 function is applied to the 'Phone 1' and 'Phone 2' columns of the DataFrame using Pandas' apply method. This removes the '57' prefix from phone numbers in these columns, where applicable.
+Finally, the function returns a value of 2 if executed successfully. Otherwise, it returns the error line along with an explanatory message of the error."	
 
-If you'd like to see a summary in an Excel file, you'll find **portafolio.xlsx** here. It provides a detailed overview of my Python projects using pandas, available in both English and Spanish, as well as the automation projects I've developed.
+libraries: sys, pandas, datetime, os, openpyxl
