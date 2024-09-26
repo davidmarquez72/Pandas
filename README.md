@@ -1,23 +1,10 @@
-To view the full details of each script, navigate to the corresponding branch. Each branch contains a detailed description and explanation of its functionality, also you can see my file .py where i apply good pracices, comments, errors handles and use of POO. Here are the branches, showcasing the complete scripts I’ve developed:
+funtion separar()	
 
-clinicaOdonto.py, 
-CopyPastePlantilla.py, 
-CruceCentrosMedicos.py, 
-cruceCodigo.py, 
-CrucePlanoEps.py, 
-CruceReporte.py, 
-dashboard.py, 
-divyvencer.py, 
-duplicados.py, 
-filtro123H.py, 
-macros.py, 
-macros2.py, 
-pendites_ach_juntas.py, 
-quitar57.py, 
-SepararNumeroID.py, 
-template.py, 
-tildesComillas.py, 
-traerDato.py, 
-Union.py
+"The current date is obtained in the format 'YYYY-MM-DD' using the datetime library and the strftime method.
+A dynamic path is created for the gloss report file using the current date. The path is constructed using the os.path.join function to ensure portability between different operating systems.
+The gloss report Excel file is loaded into a Pandas DataFrame using the pd.read_excel function.
+A dictionary called 'dfs_dict' is created to store DataFrames separated by the provider's identification number. It iterates over the unique values of the 'PROVIDER IDENTIFICATION NUMBER' column in the 'df' DataFrame. For each unique value, the original DataFrame is filtered to obtain a DataFrame that contains only the rows corresponding to that ID number and is added to the dictionary with the ID number as the key.
+It is iterated over the 'dfs_dict' dictionary and each DataFrame is written in a separate Excel file. For each key-value pair in the dictionary, a unique file name is created using the lender identification number and the current date. The to_excel method is then used to write the DataFrame to the corresponding Excel file. The index=False parameter is used to prevent the row index from being added to the Excel file.
+Finally, the function returns a value of 2 if executed successfully. Otherwise, it returns the error line along with an explanatory message of the error."	
 
-If you'd like to see a summary in an Excel file, you'll find **portafolio.xlsx** here. It provides a detailed overview of my Python projects using pandas, available in both English and Spanish, as well as the automation projects I've developed.
+libraries: sys, pandas, datetime, os
