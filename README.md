@@ -1,23 +1,18 @@
-To view the full details of each script, navigate to the corresponding branch. Each branch contains a detailed description and explanation of its functionality, also you can see my file .py where i apply good pracices, comments, errors handles and use of POO. Here are the branches, showcasing the complete scripts I’ve developed:
+funtion duplicados()
 
-clinicaOdonto.py, 
-CopyPastePlantilla.py, 
-CruceCentrosMedicos.py, 
-cruceCodigo.py, 
-CrucePlanoEps.py, 
-CruceReporte.py, 
-dashboard.py, 
-divyvencer.py, 
-duplicados.py, 
-filtro123H.py, 
-macros.py, 
-macros2.py, 
-pendites_ach_juntas.py, 
-quitar57.py, 
-SepararNumeroID.py, 
-template.py, 
-tildesComillas.py, 
-traerDato.py, 
-Union.py
+"Using the datetime library, I get the current date in the format ""yyyy-mm-dd"".
+The Pandas library is used to read the ""Union.xlsx"" file. The duplicate GLOSA IDs are then searched using the .duplicated function in the 'GLOSA ID' column, and stored in a new DataFrame. This new DataFrame is checked to see if it contains information; if yes, it is saved in an Excel file. If it contains no information, a message is printed.
+Finally, the function returns a value of 2 if executed successfully. Otherwise, it returns the error line along with an explanatory message of the error."
 
-If you'd like to see a summary in an Excel file, you'll find **portafolio.xlsx** here. It provides a detailed overview of my Python projects using pandas, available in both English and Spanish, as well as the automation projects I've developed.
+
+funtion filtro(strDateSpecific)	
+
+"Using the datetime library, I get the current date in the format ""yyyy-mm-dd"".
+The Pandas library is used to read the ""Union.xlsx"" file. All records containing ""COLSANITAS"" or ""MEDISANITAS"" are then selected in the 'PRODUCT' column using the .str.contains function. Records that have the status 'SENT TO TREASURY' in the 'STATUS' column are then filtered using the .str.contains function. Subsequently, the records with the current date are selected in the 'POSTED DATE' column using the .str.contains function. The results are overwritten in the original Excel file.
+The Excel file is then uploaded using the load_workbook function of the openpyxl library. The name of the sheet is renamed from ""Sheet1"" to ""Sheet1"" and the file is saved.
+This feature is designed so that if a specific date is received, it is selected in the 'POSTING DATE' filter, following the same process described above.
+Finally, the function returns a value of 2 if executed successfully. Otherwise, it returns the error line along with an explanatory message of the error.
+"
+
+libraries: sys, pandas, datetime, os, openpyxl
+
