@@ -1,23 +1,11 @@
-To view the full details of each script, navigate to the corresponding branch. Each branch contains a detailed description and explanation of its functionality, also you can see my file .py where i apply good pracices, comments, errors handles and use of POO. Here are the branches, showcasing the complete scripts I’ve developed:
+funtion filtros()	
 
-clinicaOdonto.py, 
-CopyPastePlantilla.py, 
-CruceCentrosMedicos.py, 
-cruceCodigo.py, 
-CrucePlanoEps.py, 
-CruceReporte.py, 
-dashboard.py, 
-divyvencer.py, 
-duplicados.py, 
-filtro123H.py, 
-macros.py, 
-macros2.py, 
-pendites_ach_juntas.py, 
-quitar57.py, 
-SepararNumeroID.py, 
-template.py, 
-tildesComillas.py, 
-traerDato.py, 
-Union.py
+"Defines the path of the original Excel file and the path where the filtered records will be saved.
+Use the Pandas library to read the original Excel file and load it into a DataFrame called 'df_original'.
+Change the data type in the 'OBSERVATIONS' column to a text string (str) using the 'astype' method.
+Filter out records that don't contain the string ""123H"" or ""123h"" in the ""OBSERVATIONS"" column. This is achieved by creating a Boolean filter that selects rows where the 'OBSERVATIONS' column does not contain any of these strings, using the 'str.contains' function.
+The filter is applied to the 'df_original' DataFrame, resulting in a new DataFrame named 'df_filtrado' that contains only the records that meet the filter.
+Finally, the filtered DataFrame is saved in a new Excel file at the path specified by 'archivo_filtrado', using Pandas' 'to_excel' method. The 'index=False' parameter indicates that the DataFrame indexes will not be included in the resulting Excel file.
+Finally, the function returns a value of 2 if executed successfully. Otherwise, it returns the error line along with an explanatory message of the error."	
 
-If you'd like to see a summary in an Excel file, you'll find **portafolio.xlsx** here. It provides a detailed overview of my Python projects using pandas, available in both English and Spanish, as well as the automation projects I've developed.
+libraies: sys, pandas
