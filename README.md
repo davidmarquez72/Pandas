@@ -1,23 +1,13 @@
-To view the full details of each script, navigate to the corresponding branch. Each branch contains a detailed description and explanation of its functionality, also you can see my file .py where i apply good pracices, comments, errors handles and use of POO. Here are the branches, showcasing the complete scripts I’ve developed:
+funtion QuitarCaracteres()	
 
-clinicaOdonto.py, 
-CopyPastePlantilla.py, 
-CruceCentrosMedicos.py, 
-cruceCodigo.py, 
-CrucePlanoEps.py, 
-CruceReporte.py, 
-dashboard.py, 
-divyvencer.py, 
-duplicados.py, 
-filtro123H.py, 
-macros.py, 
-macros2.py, 
-pendites_ach_juntas.py, 
-quitar57.py, 
-SepararNumeroID.py, 
-template.py, 
-tildesComillas.py, 
-traerDato.py, 
-Union.py
 
-If you'd like to see a summary in an Excel file, you'll find **portafolio.xlsx** here. It provides a detailed overview of my Python projects using pandas, available in both English and Spanish, as well as the automation projects I've developed.
+"The current date is obtained in the format 'YYYY-MM-DD' using the datetime library and the strftime method.
+The dynamic path for the base Excel file is constructed using the current date. The path is created using the os.path.join function to ensure portability between different operating systems.
+The Excel file is loaded into a Pandas DataFrame using the pd.read_excel function.
+The unidecode function is applied to all cells in the DataFrame to remove accents from special characters.
+Double and single quotes throughout the DataFrame are replaced with empty strings using the replace method with a regular expression.
+The columns 'Phone 1', 'Phone 2', 'Site Code' and 'Patient Document Number' are converted to string data type and the '.0' at the end of the numbers are removed using the str.replace method. The file is then loaded by the load_workbook function and the sheet is renamed 
+The modified DataFrame is saved in the same Excel file by overwriting the original, using the Pandas to_excel method with the index=False parameter.
+Finally, the function returns a value of 2 if executed successfully. Otherwise, it returns the error line along with an explanatory message of the error."	
+
+libraries: sys, pandas, datetime, os, openpyxl, unicode
